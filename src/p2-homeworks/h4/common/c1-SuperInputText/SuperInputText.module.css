@@ -1,0 +1,35 @@
+:root {
+  --b-width: 2px;
+  --b-color: #e8e8e8;
+}
+
+.input {
+  /*margin-top: 10px;*/
+  padding: 6px;
+  font-size: 14px;
+  border-width: var(--b-width);
+  border-color: var(--b-color);
+  background-color: #ffffff;
+  color: #5d5d5d;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--b-color);
+}
+
+.superInput {
+  margin-top: 10px;
+}
+
+.errorInput {
+  margin-top: 10px;
+  border: var(--b-width) solid rgba(255, 99, 71, 0.4);
+}
+
+.error {
+  color: rgba(255, 99, 71, 1);
+  height: 25px
+}

@@ -1,0 +1,30 @@
+.hw3 {
+  margin-top: 10px;
+  min-height: 60px;
+}
+
+.input {
+  border-width: 1px;
+}
+
+.error {
+  border: 1px solid tomato;
+}
+
+.error_none:focus {
+  border: 1px solid lightgreen;
+}
+
+.error:focus,
+.error_none:focus {
+  outline: none;
+}
+
+.msg_position {
+  margin-top: 8px;
+}
+
+.btn_add {
+  padding: 0 20px;
+  margin: 0 20px;
+}
