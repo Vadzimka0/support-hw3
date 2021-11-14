@@ -18,35 +18,31 @@ function Clock() {
     setTimerId(id)
   }
 
-  const onMouseEnter = () => {
-    // show
-  }
-  const onMouseLeave = () => {
-    // close
-  }
+  const onMouseEnter = () => setShow(true)
+  const onMouseLeave = () => setShow(false)
 
   const stringTime = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
-  // const stringTime = 'Time123' // fix with date
-  const stringDate = 'Date' // fix with date
+  const stringDate = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
 
   return (
     <div>
-      <div
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-      >
-        {stringTime}
-      </div>
-
-      {show && (
-        <div>
-          {stringDate}
+      <div style={{minHeight: '45px'}}>
+        <div
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        >
+          {stringTime}
         </div>
-      )}
+
+        {show && (
+          <div>
+            {stringDate}
+          </div>
+        )}
+      </div>
 
       <SuperButton onClick={start}>start</SuperButton>
       <SuperButton onClick={stop}>stop</SuperButton>
-
     </div>
   )
 }
