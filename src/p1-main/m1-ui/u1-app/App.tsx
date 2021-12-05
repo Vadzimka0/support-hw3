@@ -9,7 +9,7 @@ import HW5 from "../../../p2-homeworks/h5/HW5";
 function App() {
     return (
         <div className={s.App}>
-            <div>react homeworks: not working deploy in initial repo:&nbsp;&nbsp; https://github.com/Vadzimka0/simple-react-hw</div>
+            {/*<div>react homeworks: not working deploy in initial repo:&nbsp;&nbsp; https://github.com/Vadzimka0/simple-react-hw</div>*/}
             <div>react homeworks: create repo after support:&nbsp;&nbsp; https://github.com/Vadzimka0/support-hw3</div>
             {/*<HW1/>
             <HW2/>
